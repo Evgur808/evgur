@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Иванов Иван Иванович — Системный аналитик / Тимлид</title>
+  <meta name="description" content="Сеньор системный аналитик и тимлид с 5+ годами опыта. Экспертиза: интеграции, ЭДО, высоконагруженные веб‑системы, реинжиниринг толстого клиента, госзаказ." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='120' fill='%230ea5e9'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='120' fill='white'%3EIA%3C/text%3E%3C/svg%3E"/>
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Иванов Иван Иванович — Системный аналитик / Тимлид" />
+  <meta property="og:description" content="Сеньор системный аналитик. 5+ лет опыта. Интеграции, ЭДО, реинжиниринг, госзаказ." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Ivanov+System+Analyst" />
+
+  <!-- JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Иванов Иван Иванович",
+    "jobTitle": "Системный аналитик / Тимлид",
+    "email": "mailto:your.email@example.com",
+    "telephone": "+7-900-000-00-00",
+    "address": {"@type": "PostalAddress", "addressCountry": "RU", "addressLocality": "Санкт-Петербург"},
+    "sameAs": [
+      "https://t.me/your_handle",
+      "https://www.linkedin.com/in/your_profile",
+      "https://github.com/your_profile"
+    ],
+    "knowsAbout": ["PACS", "ЭДО", "Системная аналитика", "Интеграции", "Госуслуги", "Архитектура веб‑систем"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #141a2d;
+      --text: #e5e7eb;
+      --muted: #a7b0c0;
+      --primary: #0ea5e9; /* sky-500 */
+      --accent: #22d3ee;  /* cyan-400 */
+      --ok: #10b981;
+      --warn: #f59e0b;
+      --err: #ef4444;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(2,8,23,.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 120% -10%, rgba(34,211,238,.12), transparent 60%),
+                  radial-gradient(900px 600px at -20% -10%, rgba(14,165,233,.18), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { width: min(1100px, 92vw); margin: 0 auto; }
+    .nav {
+      position: sticky; top: 0; backdrop-filter: blur(8px);
+      background: rgba(11,16,32, .55); border-bottom: 1px solid rgba(255,255,255,.06);
+      z-index: 20;
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .3px; }
+    .brand .logo { width: 36px; height: 36px; border-radius: 50%; background: var(--primary); display: grid; place-items: center; box-shadow: var(--shadow); }
+    .brand .logo span { font-size: 18px; color: white; font-weight: 800; }
+    .nav a.btn { padding: 10px 16px; background: var(--primary); color: white; border-radius: 999px; font-weight: 600; box-shadow: var(--shadow); }
+    .nav a.btn:hover { filter: brightness(1.1); }
+
+    .hero { padding: 72px 0 40px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; }
+    .hero h1 { font-size: clamp(28px, 4.6vw, 48px); line-height: 1.15; margin: 0 0 14px; }
+    .hero p.lead { color: var(--muted); font-size: clamp(16px, 2vw, 18px); margin: 0 0 22px; }
+    .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn-primary { background: linear-gradient(135deg, var(--primary), #38bdf8); color: #fff; border: 0; padding: 12px 18px; border-radius: 12px; font-weight: 700; box-shadow: var(--shadow); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.2); color: var(--text); border-radius: 12px; padding: 12px 16px; font-weight: 700; background: transparent; }
+    .hero .card { background: linear-gradient(180deg, rgba(20,26,45,.85), rgba(20,26,45,.65)); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+
+    .badges { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 0; }
+    .badge { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); color: var(--muted); padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+
+    section { padding: 56px 0; }
+    section h2 { font-size: clamp(22px, 3.2vw, 32px); margin: 0 0 18px; }
+
+    .grid { display: grid; gap: 18px; }
+    .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .card { background: var(--card); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 0 0 10px; font-size: 18px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .kpi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .kpi .item { background: rgba(255,255,255,.06); border-radius: 12px; padding: 14px; text-align: center; }
+    .kpi .num { font-weight: 800; font-size: 22px; }
+
+    .timeline { position: relative; padding-left: 18px; }
+    .timeline::before { content: ""; position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; background: rgba(255,255,255,.12); }
+    .tl-item { position: relative; margin: 16px 0; }
+    .tl-item::before { content: ""; position: absolute; left: -2px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 3px rgba(14,165,233,.25); }
+
+    footer { padding: 40px 0 72px; border-top: 1px solid rgba(255,255,255,.06); color: var(--muted); }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { background: rgba(2,8,23,.5); border: 1px solid rgba(255,255,255,.08); padding: 10px 12px; border-radius: 10px; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid.cols-3 { grid-template-columns: 1fr; }
+      .grid.cols-2 { grid-template-columns: 1fr; }
+      .kpi { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#content" class="sr-only">Перейти к содержимому</a>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand" aria-label="Личный бренд">
+        <div class="logo" aria-hidden="true"><span>IA</span></div>
+        <div>Иванов Иван • Системный аналитик</div>
+      </div>
+      <nav aria-label="Основная навигация">
+        <a class="btn" href="#contact">Нанять меня</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Вступительный блок">
+      <div>
+        <h1>Сеньор системный аналитик / Тимлид</h1>
+        <p class="lead">5+ лет опыта: интеграции, ЭДО, реинжиниринг высоконагруженных систем. Веду команды, строю архитектуру, говорю на одном языке с бизнесом и разработкой.</p>
+        <div class="cta">
+          <a class="btn-primary" href="#portfolio">Портфолио и кейсы</a>
+          <a class="btn-outline" href="cv.pdf" download>Скачать резюме (PDF)</a>
+        </div>
+        <div class="badges" aria-label="Ключевые тезисы">
+          <span class="badge">15 000+ активных пользователей</span>
+          <span class="badge">Реинжиниринг толстого клиента → веб</span>
+          <span class="badge">Госконтракты, безопасность, SLA</span>
+        </div>
+      </div>
+      <div class="card" aria-label="Сводные показатели">
+        <div class="kpi">
+          <div class="item"><div class="num">5+ лет</div><div class="meta">Опыт аналитики</div></div>
+          <div class="item"><div class="num">3-8 чел.</div><div class="meta">Команда под моим руководством</div></div>
+          <div class="item"><div class="num">99.95%</div><div class="meta">Доступность ключевых сервисов</div></div>
+        </div>
+        <p class="meta" style="margin-top:12px">Домен: ЭДО (Казначейство), интеграции, здравоохранение (PACS), госуслуги.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Экспертиза и инструменты</h2>
+      <div class="skills">
+        <span class="skill">UML / BPMN 2.0</span>
+        <span class="skill">Сценарии, Use Case, User Story</span>
+        <span class="skill">DDD / Context Mapping</span>
+        <span class="skill">API контрактный дизайн (REST / gRPC)</span>
+        <span class="skill">Интеграции (ESB, брокеры сообщений)</span>
+        <span class="skill">SQL (аналитические запросы)</span>
+        <span class="skill">Согласование требований с госзаказчиком</span>
+        <span class="skill">Confluence / Jira</span>
+        <span class="skill">Figma / Miro</span>
+        <span class="skill">CI/CD и DevOps‑культура</span>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO / CASES -->
+    <section id="portfolio" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">Выбранные кейсы</h2>
+      <div class="grid cols-3">
+        <article class="card" aria-labelledby="case1">
+          <h3 id="case1">ЭДО Казначейства СПб: реинжиниринг и миграция в веб</h3>
+          <p class="meta">Роль: старший системный аналитик, тимлид аналитиков · 2023—2025</p>
+          <ul>
+            <li>Специфицировал 120+ пользовательских историй, 30+ интеграционных контрактов.</li>
+            <li>Сократил TTM новых функций с 8 до 3 недель за счёт стандарта API и шаблонов требований.</li>
+            <li>Оркестрация миграции: толстый клиент → тонкий для 15k пользователей без простоев.</li>
+          </ul>
+          <p><a href="#" aria-label="Открыть подробный кейс ЭДО">PDF кейс (2 стр.)</a></p>
+        </article>
+        <article class="card" aria-labelledby="case2">
+          <h3 id="case2">Интеграционная платформа: единый слой API</h3>
+          <p class="meta">Роль: системный архитектор (аналитика) · 2022—2024</p>
+          <ul>
+            <li>Разработал модель контекстов (DDD), выделил 9 bounded contexts, контракты взаимодействия.</li>
+            <li>Внедрил версионирование API и каталог спецификаций → уменьшение инцидентов интеграций на 40%.</li>
+            <li>Настроил мониторинг SLO/SLA на интеграционных потоках.</li>
+          </ul>
+          <p><a href="#">Скачать OpenAPI примеры</a></p>
+        </article>
+        <article class="card" aria-labelledby="case3">
+          <h3 id="case3">PACS прототип: архив и обмен медизображениями</h3>
+          <p class="meta">Роль: системный аналитик · 2025</p>
+          <ul>
+            <li>Проработал бизнес‑требования и схему потоков DICOM/HL7/FHIR.</li>
+            <li>Сценарии: телерадиология, маршрутизация исследований, анонимизация.</li>
+            <li>Подготовил PoC требований для пилота на 2 ЛПУ.</li>
+          </ul>
+          <p><a href="#">Диаграммы BPMN/UML</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section aria-labelledby="process-title">
+      <h2 id="process-title">Как я работаю</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Фокус на ценности</h3><p>Определяю метрики результата, связываю требования с целями бизнеса и KPI.</p></div>
+        <div class="card"><h3>Прозрачные артефакты</h3><p>Единый стандарт: описание процессов, контракты API, критерии приёмки, трассировка.</p></div>
+        <div class="card"><h3>Ведение команды</h3><p>Менторю аналитиков, код‑ревью требований, фасилитация сессий и созвонов с заказчиком.</p></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section aria-labelledby="exp-title">
+      <h2 id="exp-title">Опыт</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="card">
+            <strong>Старший системный аналитик / Тимлид</strong> · IT‑компания · 2023—2025
+            <div class="meta">Направление: интеграции, ЭДО, госконтракты. Руководство аналитиками интеграционного направления.</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="card">
+            <strong>Системный и бизнес‑аналитик</strong> · 2020—2023
+            <div class="meta">Сбор и формализация требований, моделирование процессов, спецификация API, поддержка разработки и тестирования.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Контакты</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p><strong>Открыт к предложениям</strong>: Сеньор системный аналитик, Тимлид аналитиков.</p>
+          <p>Локация: Санкт‑Петербург • Готов к релокации/удалёнке по РФ.</p>
+          <p>
+            <a class="btn-primary" href="mailto:your.email@example.com">Написать на email</a>
+            <a class="btn-outline" href="https://t.me/your_handle">Написать в Telegram</a>
+          </p>
+          <p class="meta">Также доступен: Zoom / Google Meet / VK Calls</p>
+        </div>
+        <form class="card" aria-label="Форма связи" onsubmit="event.preventDefault(); alert('Спасибо! Я свяжусь с вами.');">
+          <label for="name">Ваше имя</label>
+          <input id="name" name="name" required style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--text);margin:6px 0 12px" />
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--text);margin:6px 0 12px" />
+          <label for="msg">Сообщение</label>
+          <textarea id="msg" name="msg" rows="4" required style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--text);margin:6px 0 12px"></textarea>
+          <button class="btn-primary" type="submit">Отправить</button>
+          <p class="meta" style="margin-top:8px">*Форма демо‑режима (без отправки на сервер).</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="y"></span> Иванов Иван Иванович · Системный аналитик. 
+      <span class="meta">Сделано на чистом HTML/CSS. Готов к деплою на GitHub Pages / Netlify / Vercel.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
